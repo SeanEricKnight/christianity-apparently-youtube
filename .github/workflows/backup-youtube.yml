@@ -1,0 +1,47 @@
+name: Backup YouTube metadata
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/backup_youtube.py"
+      - ".github/workflows/backup-youtube.yml"
+      - "requirements.txt"
+  schedule:
+    - cron: "17 11 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install backup dependency
+        run: pip install -r requirements.txt
+
+      - name: Capture public YouTube metadata
+        run: python scripts/backup_youtube.py
+
+      - name: Commit snapshot if changed
+        run: |
+          if git diff --quiet -- snapshots/ && [ -z "$(git status --porcelain snapshots/)" ]; then
+            echo "No snapshot changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add snapshots/
+          git commit -m "Backup YouTube metadata $(date -u +%F)"
+          git push
