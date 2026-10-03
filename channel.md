@@ -18,38 +18,31 @@ https://christianityapparently.com
 
 ## Recommended channel description
 
-Short videos about Christianity, Jesus, the Bible, faith, doubt, grace, and the questions Christians sometimes answer too quickly.
+Jesus is the point.
+The rest is just paying attention.
+That's Christianity, apparently.
 
-I’m a Christian. I still have questions. This is a place to look honestly at Jesus without pretending the hard parts aren’t there.
+Short, honest videos about Jesus, the Bible, doubt, and grace, including the hard passages and the questions Christians tend to answer too fast.
 
-Christianity, apparently.
+christianityapparently.com
 
-https://christianityapparently.com
+## Channel positioning
 
-## Channel topic / keyword set
+The channel should be understandable to a human immediately without sounding optimized.
 
-Use these naturally. Do not stuff them into titles or descriptions.
+> Short, honest videos about Jesus, the Bible, doubt, grace, hard passages, and questions Christians tend to answer too fast.
 
-- Christianity
+## Channel keywords
+
+Optional / low priority. If used, keep them sparse and honest rather than trying to rank through keyword density.
+
+Suggested set:
 - Jesus
 - Bible
 - Christian faith
 - faith and doubt
-- Christian questions
-- God
-- gospel
 - grace
-- theology
-- Christian apologetics
 - Bible questions
-- questions about Christianity
-- questions about Jesus
-- Christian Shorts
+- Christian questions
 
-## Channel positioning
-
-The channel should be understandable to both YouTube and a human in a few seconds:
-
-> Short, honest questions about Jesus, Christianity, faith, doubt, and the Bible.
-
-SEO should clarify the subject matter. It should not make the channel sound like marketing copy.
+Do not treat channel keywords as a meaningful growth lever.
